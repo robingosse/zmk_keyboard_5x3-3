@@ -1,0 +1,28 @@
+/*
+ * Robin's Split Keyboard - Right Side
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "robin_split.dtsi"
+
+&default_transform {
+    col-offset = <6>;
+};
+
+&kscan0 {
+    // Column pins for RIGHT side (6 columns, reversed order)
+    // P0.11 = pro_micro 7
+    // P1.00 = pro_micro 6
+    // P0.24 = pro_micro 5
+    // P0.22 = pro_micro 4
+    // P0.20 = pro_micro 3
+    // P0.17 = pro_micro 2
+    col-gpios
+        = <&pro_micro 7 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 6 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 5 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 4 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 3 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 2 GPIO_ACTIVE_HIGH>
+        ;
+};
