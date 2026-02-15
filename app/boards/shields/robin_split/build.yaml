@@ -1,0 +1,5 @@
+include:
+  - board: nice_nano_v2
+    shield: robin_split_left
+  - board: nice_nano_v2
+    shield: robin_split_right
